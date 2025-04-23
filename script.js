@@ -15,3 +15,4 @@ darkMode.addEventListener('click', function() {
     darkMode.classList.toggle('active'); // Optional: Toggle 'active' class for styling the button (if needed)
     content.classList.toggle('night');  // Toggle the 'night' class on the body for dark mode
 });
+
