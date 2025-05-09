@@ -265,11 +265,11 @@ section{
 @keyframes words{
     0%,
     20%{
-        content: "Nigger";
+        content: "Programmer";
     }
     21%,
     40%{
-        content: "Digger";
+        content: "Coder";
     }
     41%,
     60%{
@@ -277,7 +277,7 @@ section{
     }
     61%,
     80%{
-        content: "Cutter";
+        content: "Gamer";
     }
     81%,
     100%{
