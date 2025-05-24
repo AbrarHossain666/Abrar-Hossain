@@ -172,30 +172,27 @@
             <h2>Contact <span>Me</span></h2>
         </div>
 <style>
-  form {
-    position: relative;
-    margin-bottom: 80px; /* to make space for the visually pushed button */
-  }
+  /* Keep all other .btn styles as is for your project cards */
 
-  .btn {
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 1.2rem 3rem;
-    border-radius: 25px;
-    font-size: 1.6rem;
-    background-color: #fafafa;
-    color: #000;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
-  }
+.submit-btn {
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 1.2rem 3rem;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  background-color: #fafafa;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
 
-  .btn:hover {
-    transform: translateX(-50%) scale(1.05);
-  }
+.submit-btn:hover {
+  transform: scale(1.05);
+}
+
+
 </style>
 
 <form action="https://formsubmit.co/ygasai291@gmail.com" method="POST">
@@ -219,7 +216,9 @@
     <input type="hidden" name="_template" value="table">
 
     <!-- Submit button styled to appear below the form -->
-    <input type="submit" value="Send Message" class="btn">
+    <input type="submit" value="Send Message" class="btn submit-btn">
+
+
 </form>
 
     </section>
