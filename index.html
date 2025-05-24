@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
 </head>
 <body>
     <header class="header">
@@ -170,25 +171,57 @@
         <div class="all-titles">
             <h2>Contact <span>Me</span></h2>
         </div>
-        <form action="#">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                </div>
-            </div>
+<style>
+  form {
+    position: relative;
+    margin-bottom: 80px; /* to make space for the visually pushed button */
+  }
 
-            <div class="input-group2">
-                <textarea name="" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
-                
-            </div>
-            
-        </form>
-        <input type="submit" value="Send Message" class="btn">
-        
+  .btn {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.2rem 3rem;
+    border-radius: 25px;
+    font-size: 1.6rem;
+    background-color: #fafafa;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+  }
+
+  .btn:hover {
+    transform: translateX(-50%) scale(1.05);
+  }
+</style>
+
+<form action="https://formsubmit.co/ygasai291@gmail.com" method="POST">
+    <!-- Input Fields -->
+    <div class="input-group">
+        <div class="input-box">
+            <input type="text" name="Full Name" placeholder="Full Name" required>
+            <input type="email" name="User Email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <input type="tel" name="Phone Number" placeholder="Phone Number">
+        </div>
+    </div>
+
+    <div class="input-group2">
+        <textarea name="Message" placeholder="Your Message" cols="30" rows="10" required></textarea>
+    </div>
+
+    <!-- Hidden settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <!-- Submit button styled to appear below the form -->
+    <input type="submit" value="Send Message" class="btn">
+</form>
+
     </section>
 
     <footer class="footer"> 
